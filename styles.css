@@ -1,0 +1,158 @@
+@import url(http://fonts.googleapis.com/css?family=Press+Start+2P|Open+Sans);
+
+body {
+	background:white;
+}
+
+p {
+	font-family:'Open Sans', sans-serif;
+	font-size:22px;
+}
+
+h1 {
+	font-size:28px;
+	font-family:'Press Start 2P';
+}
+
+.header {
+	background: url("images/header-tile.png") left repeat-x;
+	height: 86px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	margin-top: -12;
+	line-height: 2;
+	z-index: 100;
+	box-shadow: 1px 2px 12px 3px rgb(124, 90, 167);
+}
+
+.header span {
+	text-align: center;
+	font-size:36px;
+	font-family:'Press Start 2P', cursive;
+	color: rgb(209, 198, 151);
+	text-shadow:0 3px 0 #220CC2, 0 5px 0 #1BCCEE, 0 9px 0 #AC9762, 0 14px 0 #D524D4, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+.wrapper {
+	margin:0 auto;
+	width:1000px;
+}
+
+
+.info {
+	display:inline-block;
+	float:left;
+	width:400px;
+	margin-top:100px;
+}
+
+.info {
+	display:inline-block;
+}
+
+input {
+	position:relative;
+	display: block;
+	width: 356;
+	height: 50;
+	float: left;
+	font-family: 'Press Start 2P';
+	font-size: 12px;
+	border-radius: 7px;
+	padding-left: 6;
+	border: 1px solid rgb(243, 119, 119);
+	box-shadow: -4px 5px 14px -2px rgb(167, 167, 167);
+	margin-bottom: 12px;
+	-webkit-transition: background 1s ease;
+	z-index:1;
+}
+
+.Button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #f5978e;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f5978e;
+	box-shadow:inset 0px 1px 0px 0px #f5978e;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f) );
+	background:-moz-linear-gradient( center top, #f24537 5%, #c62d1f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f');
+	background-color:#f24537;
+	-webkit-border-top-left-radius:0px;
+	-moz-border-radius-topleft:0px;
+	border-top-left-radius:0px;
+	-webkit-border-top-right-radius:0px;
+	-moz-border-radius-topright:0px;
+	border-top-right-radius:0px;
+	-webkit-border-bottom-right-radius:15px;
+	-moz-border-radius-bottomright:15px;
+	border-bottom-right-radius:15px;
+	-webkit-border-bottom-left-radius:15px;
+	-moz-border-radius-bottomleft:15px;
+	border-bottom-left-radius:15px;
+	text-indent:-8px;
+	display:inline-block;
+	color:#ffffff;
+	font-family:'Press Start 2p';
+	font-size:24px;
+	font-weight:normal;
+	font-style:normal;
+	height:55px;
+	line-height:55px;
+	width:200px;
+	margin-top:-15px;
+	margin-left:67px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:0px 2px 1px #810e05;
+
+}
+
+.Button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537) );
+	background:-moz-linear-gradient( center top, #c62d1f 5%, #f24537 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537');
+	background-color:#c62d1f;
+}
+
+.Button:active {
+	position:relative;
+	top:1px;
+}
+
+
+.errormessage {
+	height:0px;
+	width:157px;
+	-webkit-transition:all 1.5s ease;
+	float:right;
+	margin-top:30px;
+	margin-right:351px	;
+	margin-bottom:-200;
+	
+}
+
+
+.active {
+	height:117px;
+	width:520px;
+	margin-right:351px;
+	margin-top:74px;
+	float:right;
+	-webkit-transition:height 1s ease;
+	background-image:url("images/Wiz2.png");
+}
+
+
+.output {
+	width:600px;
+	float:right;
+	text-align:left;
+	margin-top:200px;
+	
+}
+
+.warning {
+	background:red;
+	-webkit-input-placeholder {
+    color: white; }
+}
+
