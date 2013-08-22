@@ -28,7 +28,7 @@ h1 {
 
 .header span {
 	text-align: center;
-	font-size:36px;
+	font-size:35px;
 	font-family:'Press Start 2P', cursive;
 	color: rgb(209, 198, 151);
 	text-shadow:0 3px 0 #220CC2, 0 5px 0 #1BCCEE, 0 9px 0 #AC9762, 0 14px 0 #D524D4, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
@@ -125,8 +125,9 @@ input {
 	-webkit-transition:all 1.5s ease;
 	float:right;
 	margin-top:30px;
-	margin-right:351px	;
+	margin-right:277px	;
 	margin-bottom:-200;
+	-webkit-transition:heigh 1.4s ease;
 	
 }
 
@@ -134,10 +135,10 @@ input {
 .active {
 	height:117px;
 	width:520px;
-	margin-right:351px;
+	margin-right:277px;
 	margin-top:74px;
 	float:right;
-	-webkit-transition:height 1s ease;
+	-webkit-transition:height 1.2s ease;
 	background-image:url("images/Wiz2.png");
 }
 
