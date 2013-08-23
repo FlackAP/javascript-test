@@ -21,6 +21,10 @@ $(document).ready(function(){
 		}
 	})
 
+	$('.About').click(function () {
+		console.log('what?')
+		$('.modal').addClass('modal-active');
+	})	
 
 })
 
@@ -37,8 +41,10 @@ function validateForm (){
 			good=false
 			$(this).addClass("warning")
 			$('.errormessage').addClass('active')
+			// change modal to active HERE 
 		}
 	})
 	console.log(good)
 	return good
 }
+
