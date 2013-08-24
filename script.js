@@ -21,7 +21,18 @@ $(document).ready(function(){
 		}
 	})
 
+// MODAL OPEN/CLOSE SCRIPTS
 
+	$('.About').click(function () {
+		console.log('what?')
+		$('.modal').addClass('modal-active');
+	})
+
+	$('.Button-2').click(function () {
+		console.log('we closed it!')
+		$('.modal').removeClass('modal-active');
+	})	
+                                                                                 
 })
 
 // this checks if inputs are empty
@@ -37,8 +48,10 @@ function validateForm (){
 			good=false
 			$(this).addClass("warning")
 			$('.errormessage').addClass('active')
+			// change modal to active HERE 
 		}
 	})
 	console.log(good)
 	return good
 }
+

@@ -45,6 +45,7 @@ h1 {
 	float:left;
 	width:400px;
 	margin-top:100px;
+	margin-bottom:60px;
 }
 
 .info {
@@ -156,4 +157,92 @@ input {
 	-webkit-input-placeholder {
     color: white; }
 }
+
+
+.modal {
+	background: rgba(0,0,0,0.0); 
+	z-index:1;
+	top: 0; 
+	left: 0;
+	bottom:0;
+ 	right:0;
+ 	height: 0;
+ 	overflow:hidden;
+ 	transition: background 0.4s ease;
+}
+
+.modal-active {
+	background: rgba(0,0,0,0.5); 
+	position:  fixed; 
+	height: auto;
+}
+
+.modal-active .modal-box {
+	opacity: 1;
+	-webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale3d(1, 1, 1);
+}
+
+.modal-box {
+	opacity: 0;
+	height:300;
+	width:500;
+	border-radius:4;
+	background: #fff;
+	margin: 200px auto 0;
+	box-shadow: 0 3px 3px #585858;
+	transition: all 0.6s ease-in-out;
+	-webkit-transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg) scale3d(1.5, 1.5, 1.5)
+}
+
+.Button-2{
+	text-decoration: none;
+	text-align: center;
+	text-shadow: 0px 2px 1px #810e05;
+	height: 60px;
+	width: 140px;
+	position: absolute;
+	bottom: 2;
+	left: 168;
+	line-height: 4;
+	font-size: 20;
+	font-family: 'Press Start 2P';
+	color: white;
+	border-radius:4;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f) );
+	background:-moz-linear-gradient( center top, #f24537 5%, #c62d1f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f');
+	background-color:#f24537;
+}
+
+.Button-2:hover {
+	-moz-box-shadow:inset 0px 1px 0px 0px #f5978e;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f5978e;
+	box-shadow:inset 0px 1px 0px 0px #f5978e;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f) );
+	background:-moz-linear-gradient( center top, #f24537 5%, #c62d1f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f');
+	background-color:#f24537;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537) );
+	background:-moz-linear-gradient( center top, #c62d1f 5%, #f24537 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537');
+	background-color:#c62d1f;
+	position:absolute;
+}
+
+.Button-2:active {
+	bottom:0px;
+}
+
+
+.footer {
+	height:120px;
+	width:100%;
+	background: url('images/grass.jpeg');
+	margin-top: -120px; /* negative value of footer height */
+	clear:both;
+}
+
+
+
+
 
