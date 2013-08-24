@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	$('.Button').click(function() {
+		// condition that calls validateForm listed below before proceeding 
 		if (validateForm()) {
 			var Value = $('.Name').val();
 			$('#Name').text(Value);
