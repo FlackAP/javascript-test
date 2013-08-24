@@ -161,7 +161,7 @@ input {
 
 .modal {
 	background: rgba(0,0,0,0.0); 
-	z-index:1;
+	z-index:2;
 	top: 0; 
 	left: 0;
 	bottom:0;
@@ -194,24 +194,37 @@ input {
 	-webkit-transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg) scale3d(1.5, 1.5, 1.5)
 }
 
+.modal p {
+	text-align:center;
+	font-size:21px;
+}
+
+.modal h1 {
+	text-align: center;
+	padding-top:10px;
+	font-size:32px;
+	margin-bottom:-8px;
+}
+
 .Button-2{
 	text-decoration: none;
 	text-align: center;
 	text-shadow: 0px 2px 1px #810e05;
-	height: 60px;
+	height: 53px;
 	width: 140px;
 	position: absolute;
 	bottom: 2;
-	left: 168;
-	line-height: 4;
+	left: 180;
+	line-height: 3;
 	font-size: 20;
 	font-family: 'Press Start 2P';
 	color: white;
-	border-radius:4;
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f) );
-	background:-moz-linear-gradient( center top, #f24537 5%, #c62d1f 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f');
-	background-color:#f24537;
+	border-radius: 13;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #8F423B) );
+	background: -moz-linear-gradient( center top, #f24537 5%, #c62d1f 100% );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f');
+	background-color: #FFFFFF;
+	margin-top:10px;
 }
 
 .Button-2:hover {
@@ -235,14 +248,46 @@ input {
 
 
 .footer {
-	height:120px;
-	width:100%;
+	height: 120px;
+	width: 104%;
 	background: url('images/grass.jpeg');
-	margin-top: -120px; /* negative value of footer height */
-	clear:both;
+	margin-top: -120px;
+	clear: both;
+	position: relative;
+	top: 11;
+	bottom: -1;
+	left: -13;
 }
 
+/*ABOUT IMAGE WITH HOVER EFFECT*/
 
+.About {
+	background:url('images/book1.gif');
+	width:106px;
+	height:120px;
+	z-index:2;
+	transition:all 1sec ease;
+	background-size: 100%;
+	position:absolute;
+	right:78;
 
+}
+
+.About:hover {
+	background:url('images/book.gif');
+	background-size:100%;
+	z-index:1;
+	-webkit-transition:background 1sec ease;
+	color:green;
+}
+
+.about span {
+	text-align: center;
+	line-height: 2;
+	font-family: 'Press Start 2P';
+	font-size:22px;
+	color:white;
+	-webkit-text-stroke: 2px black;
+}
 
 
