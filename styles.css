@@ -17,7 +17,7 @@ h1 {
 .header {
 	background: url("images/header-tile.png") left repeat-x;
 	height: 86px;
-	width: 100%;
+	width: 103%;
 	position: absolute;
 	left: 0;
 	margin-top: -12;
@@ -34,9 +34,41 @@ h1 {
 	text-shadow:0 3px 0 #220CC2, 0 5px 0 #1BCCEE, 0 9px 0 #AC9762, 0 14px 0 #D524D4, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
 }
 
+.users-list {
+	height: 400px;
+	width: 315px;
+	background: #C9CDE2;
+	float: right;
+	position: relative;
+	top: 68px;
+	right: 29;
+	padding-top: 13;
+	box-shadow: 0 5px 26px 2px rgba(28, 66, 65, 0.3);
+	text-align: center;
+	font-family: 'Press Start 2P';
+	overflow-y:auto;
+
+}
+
+h2 {
+	font-size:22px;
+}
+
+.users-list li {
+	text-align: left;
+	font-size:18px;
+	font-family:'Open Sans';
+}
+
+
 .wrapper {
 	margin:0 auto;
 	width:1000px;
+}
+
+.wrapper-body {
+	margin:0 auto;
+	width:1305px;
 }
 
 
@@ -123,12 +155,14 @@ input {
 .errormessage {
 	height:0px;
 	width:157px;
+	opacity:0;
 	-webkit-transition:all 1.5s ease;
 	float:right;
 	margin-top:30px;
 	margin-right:277px	;
 	margin-bottom:-200;
-	-webkit-transition:heigh 1.4s ease;
+	-webkit-transition:height 1.4s ease;
+	-webkit-transition:opacity 1.5s ease;
 	
 }
 
@@ -136,19 +170,23 @@ input {
 .active {
 	height:117px;
 	width:520px;
+	opacity: 1;
 	margin-right:277px;
 	margin-top:74px;
-	float:right;
+	position: relative;
+	left: -224;
+	bottom: -524;
 	-webkit-transition:height 1.2s ease;
+	-webkit-transition:opacity 1.4s ease;
 	background-image:url("images/Wiz2.png");
 }
 
 
 .output {
 	width:600px;
-	float:right;
+	display:inline-block;
 	text-align:left;
-	margin-top:200px;
+	margin-top:118px;
 	
 }
 
@@ -196,7 +234,7 @@ input {
 
 .modal p {
 	text-align:center;
-	font-size:21px;
+	font-size:21px
 }
 
 .modal h1 {
