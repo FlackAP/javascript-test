@@ -52,10 +52,12 @@ $(document).ready(function(){
 function getFormValues ( ) {
 	var nameVal	= $('.Name').val();
 	var homeVal = $('.Hometown').val();
+	var birthVal= $('.Birthday').val();
 
 	var formData = {
 		name: nameVal,
-		home: homeVal
+		home: homeVal,
+		birthday: birthVal
 	}
 
 	return formData
